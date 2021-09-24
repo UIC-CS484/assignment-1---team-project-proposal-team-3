@@ -72,4 +72,22 @@
     </div>
 </div>
 </body>
+<script>
+    document.getElementById("textSize").addEventListener('change', (event) => {
+        switch (event.target.value) {
+            case "small":
+                document.querySelectorAll('.myParagraph').forEach(i => i.style.fontSize = "medium");
+                document.querySelectorAll('.myHeader').forEach(i => i.style.fontSize = "larger");
+                break;
+            case "medium":
+                document.querySelectorAll('.myParagraph').forEach(i => i.style.fontSize = "large");
+                document.querySelectorAll('.myHeader').forEach(i => i.style.fontSize = "x-large");
+                break;
+            case "large":
+                document.querySelectorAll('.myParagraph').forEach(i => i.style.fontSize = "larger");
+                document.querySelectorAll('.myHeader').forEach(i => i.style.fontSize = "xx-large");
+                break;
+        }
+    })
+</script>
 </html>
