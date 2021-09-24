@@ -26,8 +26,10 @@ body {
 }
 
 .mainBox {
+    box-sizing: border-box;
+    padding: 8px;
     background-color: #b3b5b5;
-    height: 45vh;
+    min-height: 45vh;
     width: 46vw;
     overflow-wrap: break-word;
 
